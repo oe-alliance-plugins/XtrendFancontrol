@@ -1,0 +1,18 @@
+{
+  "branch": "main",
+  "depends_recipe": "",
+  "description_control": "Fancontrol Settings inStandby Mode",
+  "description_recipe": "Fancontrol Settings inStandby Mode",
+  "history_source_dir": "XtrendFancontrol",
+  "internal_package_name": "enigma2-plugin-systemplugins-fancontrol",
+  "module_dir_name": "XtrendFancontrol",
+  "output_subdir": "XtrendFancontrol",
+  "package_name": "enigma2-plugin-systemplugins-fancontrol-xtrend-fancontrol",
+  "plugin_src_rel": "XtrendFancontrol",
+  "python_package": "XtrendFancontrol",
+  "rdepends_recipe": "",
+  "replaces": "",
+  "repo_name": "XtrendFancontrol",
+  "rrecommends": "",
+  "rreplaces": ""
+}
