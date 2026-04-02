@@ -333,7 +333,7 @@ class FanSetupScreen(ConfigListScreen, Screen):
 			self.FAN.hddsleep.value = False
 			return
 			# or just set it to False and continue
-			#self.FAN.hddsleep.value = False
+			# self.FAN.hddsleep.value = False
 		self.FAN.save()
 		self.close()
 
