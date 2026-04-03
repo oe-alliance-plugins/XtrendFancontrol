@@ -1,4 +1,3 @@
-from __future__ import print_function
 #
 # Fan Setup Plugin for et9x00, et8000 and et10000
 # Coded by Dima73 (c) 2011
@@ -11,25 +10,17 @@ from __future__ import print_function
 
 
 # for localized messages
-from . import _
+from . import _, __version__
 
-from Plugins.Plugin import PluginDescriptor
 from Components.Harddisk import harddiskmanager
-from Components.Pixmap import Pixmap, MultiPixmap
+from Components.Pixmap import Pixmap
 from Screens.Screen import Screen
 from Components.ConfigList import ConfigListScreen
 from Components.config import config, ConfigSubsection, ConfigInteger, ConfigSelection, getConfigListEntry, ConfigClock, ConfigYesNo, ConfigBoolean, ConfigText, ConfigSlider
-from time import time as Time, localtime, strftime
-from enigma import eTimer
-import socket
-from os import system as os_system
+from time import localtime
 from enigma import eTimer
 from Screens.MessageBox import MessageBox
-from Components.Language import language
-from Tools.Directories import resolveFilename, SCOPE_PLUGINS, SCOPE_LANGUAGE
-from os import environ
 import os
-import gettext
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
@@ -39,11 +30,13 @@ try:
 except:
 	from boxbranding import getImageDistro
 	IMAGEDISTRO = getImageDistro()
-import six
 
-SIGN = '°' if six.PY3 else str('\xc2\xb0')
+from Plugins.Plugin import PluginDescriptor
 
-PLUGIN_VERSION = _(" ver. 3.2")
+
+SIGN = '°'
+
+PLUGIN_VERSION = f"V{__version__}"
 
 # all fan modes:
 # 1 - always OFF
@@ -162,7 +155,7 @@ class FanSetupScreen(ConfigListScreen, Screen):
 			pwm = fd.read().strip()
 			fd.close()
 			return True
-		except:
+		except OSError:
 			return False
 
 	def hasSystemTempSensor(self):
@@ -176,7 +169,7 @@ class FanSetupScreen(ConfigListScreen, Screen):
 				temp = fd.read().strip()
 				fd.close()
 			return True
-		except:
+		except OSError:
 			return False
 
 	def updateTemps(self):
@@ -199,7 +192,7 @@ class FanSetupScreen(ConfigListScreen, Screen):
 			fd = open('/proc/stb/fp/fan', 'r')
 			power = fd.read().strip()
 			fd.close()
-		except:
+		except OSError:
 			pass
 		self.curmode = power
 		if self.curmode is not None:
@@ -440,13 +433,13 @@ class FanManager:
 			file = open("/proc/stb/fp/fan", "w")
 			file.write('%s' % mode)
 			file.close()
-		except:
+		except OSError:
 			pass
 		try:
 			file = open("/proc/stb/fp/fan_pwm", "w")
 			file.write(hex(speed)[2:])
 			file.close()
-		except:
+		except OSError:
 			pass
 
 
@@ -461,7 +454,7 @@ def getSysTemp():
 			temp = int(fd.read().strip(), 0)
 			fd.close()
 		return temp
-	except:
+	except OSError:
 		return None
 
 
@@ -479,7 +472,7 @@ def getTempForDevice(device):
 			temp = int(temperature[pos1 + 1:pos2])
 			disk = temperature[1:pos1].replace('\x10\x80', '').strip()
 			return disk, temp
-	except:
+	except Exception:
 		pass
 	return None, None
 
@@ -541,9 +534,7 @@ def startup(reason, **kwargs):
 
 
 def Plugins(**kwargs):
-	from os import path
-	if path.exists("/proc/stb/fp/fan"):
-		from Plugins.Plugin import PluginDescriptor
+	if os.path.exists("/proc/stb/fp/fan"):
 		if config.plugins.FanSetup.menuhdd.value is True:
 			return [PluginDescriptor(name=_("Fan Control"), description=_("switch Fan On/Off"), where=PluginDescriptor.WHERE_MENU, needsRestart=True, fnc=selSetup),
 					PluginDescriptor(name=_("Fan Setup"), description="", where=PluginDescriptor.WHERE_SESSIONSTART, fnc=startup),
