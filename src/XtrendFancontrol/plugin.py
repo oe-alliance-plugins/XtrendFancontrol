@@ -162,11 +162,11 @@ class FanSetupScreen(ConfigListScreen, Screen):
 		try:
 			if os.path.exists("/proc/stb/sensors/temp/value"):
 				fd = open('/proc/stb/sensors/temp/value', 'r')
-				temp = int(fd.read().strip(), 0)
+				temp = int(fd.read().strip(), 0)  # noqa: F841
 				fd.close()
 			else:
 				fd = open('/proc/stb/fp/temp_sensor', 'r')
-				temp = fd.read().strip()
+				temp = fd.read().strip()  # noqa: F841
 				fd.close()
 			return True
 		except OSError:
