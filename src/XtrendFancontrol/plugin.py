@@ -8,6 +8,8 @@
 #
 # v3.2: Added support for et8000 and et10000
 
+# fix F841 Local variable `fanmanager` is assigned to but never used
+_fanmanager = None
 
 # for localized messages
 from . import _, __version__
@@ -151,9 +153,8 @@ class FanSetupScreen(ConfigListScreen, Screen):
 
 	def fanSpeedControllable(self):
 		try:
-			fd = open('/proc/stb/fp/fan_pwm', 'r')
-			pwm = fd.read().strip()
-			fd.close()
+			with open('/proc/stb/fp/fan_pwm', 'r') as fd:
+				fd.read().strip()
 			return True
 		except OSError:
 			return False
@@ -530,7 +531,8 @@ def main(session, **kwargs):
 
 
 def startup(reason, **kwargs):
-	fanmanager = FanManager()
+	global _fanmanager
+	_fanmanager = FanManager()
 
 
 def Plugins(**kwargs):
