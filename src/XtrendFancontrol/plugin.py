@@ -8,9 +8,6 @@
 #
 # v3.2: Added support for et8000 and et10000
 
-# fix F841 Local variable `fanmanager` is assigned to but never used
-_fanmanager = None
-
 # for localized messages
 from . import _, __version__
 
@@ -26,19 +23,19 @@ import os
 from Components.ActionMap import ActionMap
 from Components.Button import Button
 from Components.Label import Label
+from Plugins.Plugin import PluginDescriptor
 try:
 	from Components.SystemInfo import BoxInfo
-	IMAGEDISTRO = BoxInfo.getItem("distro")
 except ImportError:
 	from boxbranding import getImageDistro
-	IMAGEDISTRO = getImageDistro()
+	BoxInfo = None
 
-from Plugins.Plugin import PluginDescriptor
-
+IMAGEDISTRO = BoxInfo.getItem("distro") if BoxInfo is not None else getImageDistro()
 
 SIGN = '°'
 
 PLUGIN_VERSION = f"V{__version__}"
+_fanmanager = None
 
 # all fan modes:
 # 1 - always OFF
