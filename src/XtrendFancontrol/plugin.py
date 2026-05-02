@@ -415,6 +415,7 @@ class FanManager:
 					# - use initial speed when current sys temp > user specified value
 					# - increase speed til max. Max is reached when current sys temp = 2 * user specified value
 					speed = min(FanConf.fanspeed.value + (255 - FanConf.fanspeed.value) * ((temp / FanConf.systemtemp.value) - 1), 255)
+					speed = int(round(speed))
 
 		if mode == "standby":
 			from Screens.Standby import inStandby
@@ -433,6 +434,10 @@ class FanManager:
 			file.close()
 		except OSError:
 			pass
+		try:
+			speed = max(0, min(int(round(speed)), 255))
+		except (TypeError, ValueError):
+			speed = 0
 		try:
 			file = open("/proc/stb/fp/fan_pwm", "w")
 			file.write(hex(speed)[2:])
