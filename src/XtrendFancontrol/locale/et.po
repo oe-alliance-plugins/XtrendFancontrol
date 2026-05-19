@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-05-02 16:46+0200\n"
 "PO-Revision-Date: \n"
 "Last-Translator: rimas\n"
 "Language-Team: \n"
@@ -13,49 +13,60 @@ msgstr ""
 "X-Generator: Poedit 1.8.7.1\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid " ver. 3.2"
-msgstr " ver. 3.2"
-
+#: ../plugin.py:235
 msgid "All"
 msgstr "Kõik"
 
+#: ../plugin.py:123
 msgid "Cancel"
 msgstr "Tühista"
 
+#: ../plugin.py:247
 msgid "End time"
 msgstr "Lõpuaeg"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Auto"
 msgstr "Vent - autom."
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Off"
 msgstr "Vent - väljas"
 
+#: ../plugin.py:61
 #, fuzzy
 msgid "Fan - Off in standby"
 msgstr "Vent - väljas"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - On"
 msgstr "Vent - sees"
 
+#: ../plugin.py:512 ../plugin.py:543 ../plugin.py:547
 msgid "Fan Control"
 msgstr "Jahutus"
 
+#: ../plugin.py:544 ../plugin.py:548
 msgid "Fan Setup"
 msgstr "Jahutus"
 
+#: ../plugin.py:228
 msgid "Fan mode"
 msgstr "Ventilaatori olek"
 
+#: ../plugin.py:109
 msgid "Fan setup:"
 msgstr "Jahutus:"
 
+#: ../plugin.py:62
 msgid "HDD Sleeping"
 msgstr "HDD puhkel"
 
+#: ../plugin.py:62
 msgid "HDD Temperature"
 msgstr "HDD temperatuur"
 
+#: ../plugin.py:323
 msgid ""
 "Harddisk standby after - no standby\n"
 "You may not use this mode!"
@@ -63,48 +74,63 @@ msgstr ""
 "HDD ooteseisundisse pärast - ooteseisundita\n"
 "Seda režiimi ei saa kasutada!"
 
+#: ../plugin.py:121 ../plugin.py:181 ../plugin.py:183
 msgid "Harddisk temperature"
 msgstr "Kõvaketta temperatuur :"
 
+#: ../plugin.py:518
 msgid "Harddisks:"
 msgstr "Kõvakettad:"
 
+#: ../plugin.py:258
 msgid "Initial fan speed"
 msgstr "Ventilaatori algkiirus"
 
+#: ../plugin.py:520
 msgid "No harddisk with temperature sensor found!"
 msgstr "Temperatuuri sensoriga ketast ei leitud!"
 
+#: ../plugin.py:525
 msgid "No system temperature sensor found!"
 msgstr "Temperatuuri sensorit ei leitud!"
 
+#: ../plugin.py:62 ../plugin.py:63
 msgid "None"
 msgstr "Pole"
 
+#: ../plugin.py:64
 msgid "Off"
 msgstr "Väljas"
 
+#: ../plugin.py:64
 msgid "On"
 msgstr "Sees"
 
+#: ../plugin.py:119
 msgid "Power status"
 msgstr "Toide: "
 
+#: ../plugin.py:122
 msgid "Save"
 msgstr "Salvesta"
 
+#: ../plugin.py:238
 msgid "Select internal HDD device"
 msgstr "Vali sisene HDD"
 
+#: ../plugin.py:545
 msgid "Show Temp"
 msgstr "Kuva temp."
 
+#: ../plugin.py:256
 msgid "Show temp. HDD to extensions menu"
 msgstr "Kuva HDD temp. laienduste menüüs"
 
+#: ../plugin.py:246
 msgid "Start time"
 msgstr "Algusaeg"
 
+#: ../plugin.py:317
 msgid ""
 "Start time OFF mode equal End time OFF mode\n"
 "You may not use this time settings!"
@@ -112,27 +138,35 @@ msgstr ""
 "\"Algusaeg - väljas\" sama kui \"Lõpuaeg - väljas\"\n"
 "Sellist aja seadistust ei saa kasutada!"
 
+#: ../plugin.py:229
 msgid "Switch Fan mode on time setting"
 msgstr "Vent tööle aja järgi"
 
+#: ../plugin.py:255
 msgid "Switch OFF mode on HDD sleep"
 msgstr "Kõvaketta ooteseisundis vent väljas"
 
+#: ../plugin.py:253
 msgid "Switch ON mode on HDD max.temp. (0 - disable)"
 msgstr "HDD maks.temp. saavutamisel vent sisse (0 - keelatud)"
 
+#: ../plugin.py:262
 msgid "Switch ON on system temp"
 msgstr "Vent sisse temperatuuril"
 
+#: ../plugin.py:120 ../plugin.py:175 ../plugin.py:177 ../plugin.py:527
 msgid "System temperature"
 msgstr "Süsteemi temperatuur : "
 
+#: ../plugin.py:230
 msgid "Watch HDD state"
 msgstr "HDD oleku seire"
 
+#: ../plugin.py:231
 msgid "Watch system temp"
 msgstr "Temperatuuri seire"
 
+#: ../plugin.py:312
 msgid ""
 "You may not use this mode!\n"
 "Not found an internal hard drive!"
@@ -140,8 +174,10 @@ msgstr ""
 "Seda režiimi ei saa kasutada!\n"
 "Sisest ketast ei leitud"
 
+#: ../plugin.py:177 ../plugin.py:181
 msgid "n.a."
 msgstr "kättesaamatu"
 
+#: ../plugin.py:543 ../plugin.py:547
 msgid "switch Fan On/Off"
 msgstr "Vent sisse/välja"

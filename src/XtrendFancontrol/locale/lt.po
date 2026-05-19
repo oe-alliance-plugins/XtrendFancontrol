@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XtrendFancontrol - oe-alliance\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-05-02 16:46+0200\n"
 "PO-Revision-Date: 2017-07-06 09:10+0300\n"
 "Last-Translator: Vytenis P. <vyteniui@gmail.com>\n"
 "Language-Team: Vytenis P.\n"
@@ -13,48 +13,59 @@ msgstr ""
 "X-Generator: Poedit 2.0.2\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-msgid " ver. 3.2"
-msgstr " vers. 3.2"
-
+#: ../plugin.py:235
 msgid "All"
 msgstr "Visi"
 
+#: ../plugin.py:123
 msgid "Cancel"
 msgstr "Atšaukti"
 
+#: ../plugin.py:247
 msgid "End time"
 msgstr "Pabaigos laikas"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Auto"
 msgstr "Aušintuvas automatiškai"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Off"
 msgstr "Aušintuvas išjungtas"
 
+#: ../plugin.py:61
 msgid "Fan - Off in standby"
 msgstr "Budėjime aušintuvas išjungtas"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - On"
 msgstr "Aušintuvas įjungtas"
 
+#: ../plugin.py:512 ../plugin.py:543 ../plugin.py:547
 msgid "Fan Control"
 msgstr "Aušintuvo valdymas"
 
+#: ../plugin.py:544 ../plugin.py:548
 msgid "Fan Setup"
 msgstr "Aušintuvo sąranka"
 
+#: ../plugin.py:228
 msgid "Fan mode"
 msgstr "Aušintuvo režimas"
 
+#: ../plugin.py:109
 msgid "Fan setup:"
 msgstr "Aušintuvo sąranka:"
 
+#: ../plugin.py:62
 msgid "HDD Sleeping"
 msgstr "HDD išjungimas"
 
+#: ../plugin.py:62
 msgid "HDD Temperature"
 msgstr "HDD temperatūra"
 
+#: ../plugin.py:323
 msgid ""
 "Harddisk standby after - no standby\n"
 "You may not use this mode!"
@@ -62,48 +73,63 @@ msgstr ""
 "HDD išjungimas - 'neišjungti'\n"
 "Jūs negalite naudoti šio režimo!"
 
+#: ../plugin.py:121 ../plugin.py:181 ../plugin.py:183
 msgid "Harddisk temperature"
 msgstr "HDD temperatūra"
 
+#: ../plugin.py:518
 msgid "Harddisks:"
 msgstr "HDD:"
 
+#: ../plugin.py:258
 msgid "Initial fan speed"
 msgstr "Pradinis aušintuvo greitis"
 
+#: ../plugin.py:520
 msgid "No harddisk with temperature sensor found!"
 msgstr "HDD su temperatūros davikliais nėra!"
 
+#: ../plugin.py:525
 msgid "No system temperature sensor found!"
 msgstr "Sistemos temperatūros daviklių nėra!"
 
+#: ../plugin.py:62 ../plugin.py:63
 msgid "None"
 msgstr "Joks"
 
+#: ../plugin.py:64
 msgid "Off"
 msgstr "Išjungta"
 
+#: ../plugin.py:64
 msgid "On"
 msgstr "Įjungta"
 
+#: ../plugin.py:119
 msgid "Power status"
 msgstr "Įtampa"
 
+#: ../plugin.py:122
 msgid "Save"
 msgstr "Išsaugoti"
 
+#: ../plugin.py:238
 msgid "Select internal HDD device"
 msgstr "Pasirinkite vidinį HDD"
 
+#: ../plugin.py:545
 msgid "Show Temp"
 msgstr "Temperatūra"
 
+#: ../plugin.py:256
 msgid "Show temp. HDD to extensions menu"
 msgstr "Rodyti HDD temp. plėtinių naršyklėje"
 
+#: ../plugin.py:246
 msgid "Start time"
 msgstr "Pradžios laikas"
 
+#: ../plugin.py:317
 msgid ""
 "Start time OFF mode equal End time OFF mode\n"
 "You may not use this time settings!"
@@ -111,27 +137,35 @@ msgstr ""
 "Pradinis ir galutinis išjungto režimo laikai sutampa\n"
 "Jūs negalite naudoti šių laiko nustatymų!"
 
+#: ../plugin.py:229
 msgid "Switch Fan mode on time setting"
 msgstr "Aušintuvo režimas, priklausomai nuo laiko"
 
+#: ../plugin.py:255
 msgid "Switch OFF mode on HDD sleep"
 msgstr "Išjungti, HDD miegant"
 
+#: ../plugin.py:253
 msgid "Switch ON mode on HDD max.temp. (0 - disable)"
 msgstr "Įjungti, esant HDD temperatūrai (0 - išjungti)"
 
+#: ../plugin.py:262
 msgid "Switch ON on system temp"
 msgstr "Įjungti, esant sistemos temp."
 
+#: ../plugin.py:120 ../plugin.py:175 ../plugin.py:177 ../plugin.py:527
 msgid "System temperature"
 msgstr "Sistemos temperatūra"
 
+#: ../plugin.py:230
 msgid "Watch HDD state"
 msgstr "HDD būklė"
 
+#: ../plugin.py:231
 msgid "Watch system temp"
 msgstr "Sistemos temperatūra"
 
+#: ../plugin.py:312
 msgid ""
 "You may not use this mode!\n"
 "Not found an internal hard drive!"
@@ -139,8 +173,10 @@ msgstr ""
 "Negalite naudoti šio režimo!\n"
 "Nerasta vidinio HDD!"
 
+#: ../plugin.py:177 ../plugin.py:181
 msgid "n.a."
 msgstr "N/D"
 
+#: ../plugin.py:543 ../plugin.py:547
 msgid "switch Fan On/Off"
 msgstr "įjungti/išjungti aušintuvą"

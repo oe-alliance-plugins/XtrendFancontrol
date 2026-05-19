@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ViX\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-05-02 16:46+0200\n"
 "PO-Revision-Date: 2018-07-31 11:02+0200\n"
 "Last-Translator: Rob van der Does <RobvanderDoes@Gmail.com>\n"
 "Language-Team: Andy Blackburn, Rob van der Does\n"
@@ -18,48 +18,59 @@ msgstr ""
 "X-Generator: Poedit 2.1.1\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-msgid " ver. 3.2"
-msgstr " ver. 3.2"
-
+#: ../plugin.py:235
 msgid "All"
 msgstr "Alle"
 
+#: ../plugin.py:123
 msgid "Cancel"
 msgstr "Annuleer"
 
+#: ../plugin.py:247
 msgid "End time"
 msgstr "Eindtijd"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Auto"
 msgstr "ventilator auto"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Off"
 msgstr "ventilator uit"
 
+#: ../plugin.py:61
 msgid "Fan - Off in standby"
 msgstr "ventilator uit in stand-by"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - On"
 msgstr "ventilator aan"
 
+#: ../plugin.py:512 ../plugin.py:543 ../plugin.py:547
 msgid "Fan Control"
 msgstr "Fan Control"
 
+#: ../plugin.py:544 ../plugin.py:548
 msgid "Fan Setup"
 msgstr "ventilatorinstellingen"
 
+#: ../plugin.py:228
 msgid "Fan mode"
 msgstr "ventilatormode"
 
+#: ../plugin.py:109
 msgid "Fan setup:"
 msgstr "ventilatorinstellingen:"
 
+#: ../plugin.py:62
 msgid "HDD Sleeping"
 msgstr "HDD slaapt"
 
+#: ../plugin.py:62
 msgid "HDD Temperature"
 msgstr "HDD temperatuur"
 
+#: ../plugin.py:323
 msgid ""
 "Harddisk standby after - no standby\n"
 "You may not use this mode!"
@@ -67,48 +78,63 @@ msgstr ""
 "HDD standby na - geen standby\n"
 "U kunt deze mode niet gebruiken!"
 
+#: ../plugin.py:121 ../plugin.py:181 ../plugin.py:183
 msgid "Harddisk temperature"
 msgstr "Harde schijf temperatuur"
 
+#: ../plugin.py:518
 msgid "Harddisks:"
 msgstr "HDD's:"
 
+#: ../plugin.py:258
 msgid "Initial fan speed"
 msgstr "Initiële ventilatorsnelheid"
 
+#: ../plugin.py:520
 msgid "No harddisk with temperature sensor found!"
 msgstr "Geen HDD met temperatuursensor gevonden!"
 
+#: ../plugin.py:525
 msgid "No system temperature sensor found!"
 msgstr "Geen systeemtemperatuursensor gevonden!"
 
+#: ../plugin.py:62 ../plugin.py:63
 msgid "None"
 msgstr "Geen"
 
+#: ../plugin.py:64
 msgid "Off"
 msgstr "Uit"
 
+#: ../plugin.py:64
 msgid "On"
 msgstr "Aan"
 
+#: ../plugin.py:119
 msgid "Power status"
 msgstr "Netstroomstatus"
 
+#: ../plugin.py:122
 msgid "Save"
 msgstr "Sla op"
 
+#: ../plugin.py:238
 msgid "Select internal HDD device"
 msgstr "Kies interne HDD"
 
+#: ../plugin.py:545
 msgid "Show Temp"
 msgstr "Toon temperatuur"
 
+#: ../plugin.py:256
 msgid "Show temp. HDD to extensions menu"
 msgstr "Toon HDD temperatuur in extensies"
 
+#: ../plugin.py:246
 msgid "Start time"
 msgstr "Starttijd"
 
+#: ../plugin.py:317
 msgid ""
 "Start time OFF mode equal End time OFF mode\n"
 "You may not use this time settings!"
@@ -116,27 +142,35 @@ msgstr ""
 "Starttijd UIT is gelijk aan eindtijd UIT\n"
 "U kunt deze tijdinstelling niet gebruiken!"
 
+#: ../plugin.py:229
 msgid "Switch Fan mode on time setting"
 msgstr "Wissel ventilator-mode per tijdsinstelling"
 
+#: ../plugin.py:255
 msgid "Switch OFF mode on HDD sleep"
 msgstr "Deactiveer mode als HDD slaapt"
 
+#: ../plugin.py:253
 msgid "Switch ON mode on HDD max.temp. (0 - disable)"
 msgstr "Activeer HDD max.temp. (0 - disable)"
 
+#: ../plugin.py:262
 msgid "Switch ON on system temp"
 msgstr "Inschakel systeemtemperatuur"
 
+#: ../plugin.py:120 ../plugin.py:175 ../plugin.py:177 ../plugin.py:527
 msgid "System temperature"
 msgstr "Systeemtemperatuur"
 
+#: ../plugin.py:230
 msgid "Watch HDD state"
 msgstr "Controleer HDD status"
 
+#: ../plugin.py:231
 msgid "Watch system temp"
 msgstr "Bewaak systeemtemperatuur"
 
+#: ../plugin.py:312
 msgid ""
 "You may not use this mode!\n"
 "Not found an internal hard drive!"
@@ -144,8 +178,10 @@ msgstr ""
 "U kunt deze modus niet gebruiken!\n"
 "Geen interne schijf gevonden!"
 
+#: ../plugin.py:177 ../plugin.py:181
 msgid "n.a."
 msgstr "n.v.t."
 
+#: ../plugin.py:543 ../plugin.py:547
 msgid "switch Fan On/Off"
 msgstr "schakel ventilator Aan/Uit"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Fancontrol v1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-30 19:14+0200\n"
+"POT-Creation-Date: 2026-05-02 16:46+0200\n"
 "PO-Revision-Date: 2018-04-19 13:39+0200\n"
 "Last-Translator: Alec <alex1vagyok@gmail.com>\n"
 "Language-Team: alec <alex1vagyok@gmail.com>\n"
@@ -13,48 +13,59 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.0.6\n"
 
-msgid " ver. 3.2"
-msgstr " verzió 3.2"
-
+#: ../plugin.py:235
 msgid "All"
 msgstr "Összes"
 
+#: ../plugin.py:123
 msgid "Cancel"
 msgstr "Mégse"
 
+#: ../plugin.py:247
 msgid "End time"
 msgstr "Befejezési időpont"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Auto"
 msgstr "Automatikus működési mód"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - Off"
 msgstr "Kikapcsolt állapot"
 
+#: ../plugin.py:61
 msgid "Fan - Off in standby"
 msgstr "Készenléti állapotban kikapcsolva"
 
+#: ../plugin.py:61 ../plugin.py:63
 msgid "Fan - On"
 msgstr "Állandó működés"
 
+#: ../plugin.py:512 ../plugin.py:543 ../plugin.py:547
 msgid "Fan Control"
 msgstr "Ventilátor vezérlés beállításai"
 
+#: ../plugin.py:544 ../plugin.py:548
 msgid "Fan Setup"
 msgstr "Ventilátor beállítás"
 
+#: ../plugin.py:228
 msgid "Fan mode"
 msgstr "A ventilátor üzemmódja"
 
+#: ../plugin.py:109
 msgid "Fan setup:"
 msgstr "Ventilátor beállítás:"
 
+#: ../plugin.py:62
 msgid "HDD Sleeping"
 msgstr "Merevlemez alvó üzemmód"
 
+#: ../plugin.py:62
 msgid "HDD Temperature"
 msgstr "Merevlemez hőmérséklet"
 
+#: ../plugin.py:323
 msgid ""
 "Harddisk standby after - no standby\n"
 "You may not use this mode!"
@@ -62,48 +73,63 @@ msgstr ""
 "Merevlemez a készenléti üzemmód után!\n"
 "Ne használja ezt az üzemmódot!"
 
+#: ../plugin.py:121 ../plugin.py:181 ../plugin.py:183
 msgid "Harddisk temperature"
 msgstr "Merevlemez hőmérséklet"
 
+#: ../plugin.py:518
 msgid "Harddisks:"
 msgstr "Merevlemezek:"
 
+#: ../plugin.py:258
 msgid "Initial fan speed"
 msgstr "A ventilátor sebessége"
 
+#: ../plugin.py:520
 msgid "No harddisk with temperature sensor found!"
 msgstr "Nem található merevlemez hőmérséklet jelző szenzorral!"
 
+#: ../plugin.py:525
 msgid "No system temperature sensor found!"
 msgstr "Nem található rendszer hőmérséklet jelző szenzor!"
 
+#: ../plugin.py:62 ../plugin.py:63
 msgid "None"
 msgstr "Nem"
 
+#: ../plugin.py:64
 msgid "Off"
 msgstr "Ki"
 
+#: ../plugin.py:64
 msgid "On"
 msgstr "Be"
 
+#: ../plugin.py:119
 msgid "Power status"
 msgstr "Energiaállapot"
 
+#: ../plugin.py:122
 msgid "Save"
 msgstr "Mentés"
 
+#: ../plugin.py:238
 msgid "Select internal HDD device"
 msgstr "Válassza ki a belső merevlemez meghajtót"
 
+#: ../plugin.py:545
 msgid "Show Temp"
 msgstr "Hőmérséklet megjelenítése"
 
+#: ../plugin.py:256
 msgid "Show temp. HDD to extensions menu"
 msgstr "A merevlemez hőmérséklet megjelenítése a kiegészítő menűben"
 
+#: ../plugin.py:246
 msgid "Start time"
 msgstr "Kezdési időpont"
 
+#: ../plugin.py:317
 msgid ""
 "Start time OFF mode equal End time OFF mode\n"
 "You may not use this time settings!"
@@ -111,27 +137,35 @@ msgstr ""
 "A kezdési idő kikapcsolási módja megegyezik a befejezési idő kikapcsolási módjával\n"
 "Ne használja ezt a beállítást!"
 
+#: ../plugin.py:229
 msgid "Switch Fan mode on time setting"
 msgstr "A ventilátor üzemmódja az időpontok között"
 
+#: ../plugin.py:255
 msgid "Switch OFF mode on HDD sleep"
 msgstr "Merevlemez alvó üzemmódjában legyen kikapcsolva"
 
+#: ../plugin.py:253
 msgid "Switch ON mode on HDD max.temp. (0 - disable)"
 msgstr "Merevlemez ennél a hőmérsékleténél legyen bekapcsolva (0 - letiltva)"
 
+#: ../plugin.py:262
 msgid "Switch ON on system temp"
 msgstr "Ventilátor legyen bekapcsolva az adott Rendszer hőmérsékletnél"
 
+#: ../plugin.py:120 ../plugin.py:175 ../plugin.py:177 ../plugin.py:527
 msgid "System temperature"
 msgstr "Rendszer hőmérséklete"
 
+#: ../plugin.py:230
 msgid "Watch HDD state"
 msgstr "Merevlemez állapot figyelése"
 
+#: ../plugin.py:231
 msgid "Watch system temp"
 msgstr "Rendszer hőmérséklet állapotának mutatása"
 
+#: ../plugin.py:312
 msgid ""
 "You may not use this mode!\n"
 "Not found an internal hard drive!"
@@ -139,8 +173,10 @@ msgstr ""
 "Nem használható ez az üzemmód!\n"
 "Nem található belső merevlemez egység!"
 
+#: ../plugin.py:177 ../plugin.py:181
 msgid "n.a."
 msgstr "-"
 
+#: ../plugin.py:543 ../plugin.py:547
 msgid "switch Fan On/Off"
 msgstr "ventilátor Ki/Be kapcsolása"
